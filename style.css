@@ -166,7 +166,7 @@ section{
     padding: 100px 0;
  }
  
- .about, .services, .skills, .teams, .contact, footer{
+ .about, .projects, .services, .skills, .projects, .contact, footer{
      font-family: 'Poppins',sans-serif;
      
  }
@@ -260,23 +260,43 @@ section .title::after{
     border: 2px solid orange;
     transition: all 0.3s ease;
 }
+.about .about-content .right a.company_link{
+   
+    display: inline-block;
+    background: none;
+    color: black;
+    text-decoration: underline;
+    text-align: justify;
+    font-size: 18px;
+    padding: 0px;
+    margin-top: 0px;
+    border-radius: none ;
+    border: none;
+    transition: all 0.3s ease;
+}
 
 .about .about-content .right a:hover{
     color: orange;
     background: none;
 }
 
+.about .about-content .right a.company_link:hover{
+    color: orange;
+    text-decoration: underline;
+    background: none;
+}
+
 /* services section styling */
-.services, .teams{
+.services, .projects{
     color: #fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.projects .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.projects .title::after{
     background: #111;
     content: "what i provide" ;
 
@@ -408,11 +428,11 @@ section .title::after{
 
 
 /* teams section styling */
-.teams .title::after{
+.projects .title::after{
     content: "who with me";
 }
 
-.teams .carousel .card{
+.projects .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -421,16 +441,16 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover{
+.projects .carousel .card:hover{
     background: orange;
 }
 
-.teams .carousel .card .text{
+.projects .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card .box{
+.projects .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -438,10 +458,10 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover .box{
+.projects .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card img{
+.projects .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -449,7 +469,7 @@ section .title::after{
     border: 5px solid orange;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.projects .carousel .card:hover img{
     border-color: #fff;
 
 }
@@ -476,6 +496,36 @@ section .title::after{
     background: orange!important;
 
 }
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.projects .carousel .card:hover img{
+    border-color: #fff;
+
+}
+
+.projects .carousel .card .box  a:hover{
+    color: orange;
+    background: #222
+}
+
+.projects .carousel .card .box a{
+    display: inline-block;
+    background: orange;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 2px solid orange;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
 
 /* contact section styyling */
 .contact .title::after{
